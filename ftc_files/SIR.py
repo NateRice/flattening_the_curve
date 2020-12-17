@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Nathan Rice
-Homework3
-Problem2
+Author: Nathan Rice
+Flattening the Curve
+Using SIR model for spread of disease from epidemiology 
+to model effects of different levels of disease spread prevention measures
+(value of Rnot is infection reproduction value)
 """
 import matplotlib.pyplot as plt
 import numpy as np
@@ -72,9 +74,9 @@ sirModel(4)
 plt.clf()
 sirModel(1.7)
         
-#Maximum people infected for rnot value =  10 : 199193741
-#Maximum people infected for rnot value =  4 : 120727310
-#Maximum people infected for rnot value =  1.7 : 29931532
+#Maximum people infected for rnot value =  10 : 201,288,775
+#Maximum people infected for rnot value =  4 : 121,176,853
+#Maximum people infected for rnot value =  1.7 : 29,959,267
 
     
     
