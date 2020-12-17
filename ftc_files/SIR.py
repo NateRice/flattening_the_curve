@@ -9,7 +9,7 @@ import numpy as np
 
 def sirModel(x):
     '''Generates plot for SIR model using parameter value for Rnot'''
-    
+    # lists to save values of S, I, and R after each hour
     S_day = []
     I_day = []
     R_day = []
@@ -28,11 +28,18 @@ def sirModel(x):
     
     for t in hours:
         #print("\nt = ",t)
-        I = I + ((Rnot*I*S)/(gamma*P)) - (I/gamma)
+       
+        # _now variables are S, I, R at time t
+        S_now = S
+        I_now = I
+        R_now = R
+        
+        # S, I, and R are now known at time t+1
+        I = I_now + ((Rnot*I_now*S_now)/(gamma*P)) - (I_now/gamma)
         I_day.append(I)
-        S = S - ((Rnot*I*S)/(gamma*P)) 
+        S = S_now - ((Rnot*I_now*S_now)/(gamma*P)) 
         S_day.append(S)
-        R = R + (I/gamma)
+        R = R_now + (I_now/gamma)
         R_day.append(R)
         #print("S+I+R = %f"%(S+I+R))
         #print("S_day = ",S_day)
