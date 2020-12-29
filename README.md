@@ -26,9 +26,7 @@ measure possible such as social distancing, wearing a mask, staying at home, and
    <img src="ftc_files/rnot1.7.png" width="600px">
 </p>
 The maximum number of people infected for rnot value 1.7 is 29,959,267.
-
-
-
+<br>
 A reproduction value of 4 could represent the population taking only some preventative measures, such as
 wearing a mask and washing hands.
 
@@ -36,9 +34,7 @@ wearing a mask and washing hands.
    <img src="ftc_files/rnot4.png" width="600px">
 </p>
 The maximum number of people infected for rnot value 4 is 121,176,853.
-
-
-
+<br>
 A reproduction value of 10 represents a society where few people take preventative measures.
 
 <p align="center">
